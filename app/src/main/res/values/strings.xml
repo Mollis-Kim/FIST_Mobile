@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FISTs</string>
+    <string name="title_userheight">사용자 눈높이</string>
+    <string name="title_diameter">흉고직경</string>
+    <string name="title_height">수고</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cation_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#413F3F">
+
+    <ImageView
+        android:id="@+id/importance_mark"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/exclamation_mark"
+        android:layout_toLeftOf="@id/userGuide_title"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/userGuide_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사용 설명서"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="7dp"
+        android:textColor="#FFFF"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/next_layout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/go"
+        android:text="Let's Go"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/guideline_pager"
+        android:name="com.example.forestinventorysurveytools.ui.userguide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/userGuide_title"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
